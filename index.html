@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pratiksha Khare Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SPACE BACKGROUND -->
+  <canvas id="particles"></canvas>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <div class="logo">Pratiksha Khare</div>
+    <div class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero" class="section hero-container">
+    <img src="profile.jpg" alt="Profile Photo" class="hero-photo">
+    <div class="hero-text">
+      <h1>Hi, I'm Pratiksha Khare</h1>
+      <p>Exploring the ever-evolving landscape of technology to transform challenges into opportunities for growth and discovery.</p>
+      <a href="1770655140691.pdf" download class="btn">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card"><img src="html.png"><p>HTML</p></div>
+      <div class="skill-card"><img src="css.png"><p>CSS</p></div>
+      <div class="skill-card"><img src="js.png"><p>JavaScript</p></div>
+      <div class="skill-card"><img src="react.png"><p>React</p></div>
+      <div class="skill-card"><img src="Python.jpg"><p>Python</p></div>
+      <div class="skill-card"><img src="sql.png"><p>SQL</p></div>
+      <div class="skill-card"><img src="cpp.png"><p>C++</p></div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="card" onclick="openProject('p1')">Girls Safety Website</div>
+    <div class="card" onclick="openProject('p2')">Portfolio Website</div>
+
+    <div id="project-details">
+      <h3 id="project-title"></h3>
+      <p id="project-desc"></p>
+      <a id="project-link" target="_blank">View Project</a>
+      <br><br>
+      <button onclick="closeProject()" class="btn">Close</button>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATES SECTION ===== -->
+  <section id="certificates" class="section">
+    <h2>Certificates</h2>
+    <div class="certificates-container">
+      <div class="certificate-card">
+        <img src="cert1.jpg">
+        <p>Open Source Contributor</p>
+      </div>
+      <div class="certificate-card">
+        <img src="cert4.jpg">
+        <p>Salesforce Developer Workshop</p>
+      </div>
+      <div class="certificate-card">
+        <img src="cert5.jpg">
+        <p>ECWoC</p>
+      </div>
+      <div class="certificate-card">
+        <img src="cert 7.jpg">
+        <p>UCMAS State Level Competition</p>
+      </div>
+      <div class="certificate-card">
+        <img src="cert6.jpg">
+        <p>UCMAS National Level Competition</p>
+      </div>
+      <div class="certificate-card">
+        <img src="cert3.jpg">
+        <p>Coalescence'25</p>
+      </div>
+      <div class="certificate-card">
+        <img src="cert2.jpg">
+        <p>Bharat Nivesh Run</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Click an icon to reach me:</p>
+    <div class="contact-icons">
+      <a href="https://www.linkedin.com/in/pratiksha-khare-05557b333" target="_blank" class="contact-icon" title="LinkedIn">
+      <img src="linkedin.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/pratiksha0407314" target="_blank" class="contact-icon" title="GitHub">
+      <img src="github.png" alt="GitHub">
+    </a>
+       <!-- Call -->
+    <a href="tel:+918827975814" class="contact-icon" title="Call Me">
+      <img src="phone.jpg" alt="Call">
+    </a>
+<a href="https://mail.google.com/mail/?view=cm&to=pratiksha.khare@gmail.com" target="_blank" class="contact-icon" title="Email Me">
+<img src="mail.png">
+      </a>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

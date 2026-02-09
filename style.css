@@ -1,0 +1,66 @@
+/* ================= GENERAL STYLING ================= */
+* { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif;}
+body {background:#0f172a; color:white; line-height:1.6;}
+html {scroll-behavior: smooth;}
+
+/* ===== SPACE BACKGROUND ===== */
+#particles{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ================= NAVIGATION ================= */
+nav {position:fixed; width:100%; top:0; background:#020617; padding:10px 40px; display:flex; justify-content:space-between; align-items:center; z-index:100;}
+.nav-links a {color:white; margin-left:20px; text-decoration:none; font-weight:bold;}
+.nav-links a:hover {color:#38bdf8;}
+
+/* ================= SECTIONS ================= */
+.section {padding:40px 40px 40px 40px; min-height:auto; opacity:0; transform:translateY(20px); animation:fadeIn 0.8s forwards; animation-delay:0.2s;}
+@keyframes fadeIn {to{opacity:1; transform:translateY(0);}}
+
+/* ================= HERO ================= */
+.hero-container {display:flex; align-items:center; gap:30px; padding:60px 40px; flex-wrap:wrap;}
+.hero-photo {width:180px; height:180px; border-radius:50%; object-fit:cover; border:3px solid #38bdf8;}
+.hero-text {flex:1;}
+.hero-text h1 {font-size:2rem; margin-bottom:10px;}
+.hero-text p {font-size:1.1rem; margin-bottom:15px;}
+.hero-text .btn {margin-top:5px; background:#38bdf8; color:black; padding:10px 20px; border-radius:5px; text-decoration:none; font-weight:bold;}
+
+/* ================= SKILLS ================= */
+.skills-container {display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:20px;}
+.skill-card {background:#1e293b; padding:15px; border-radius:10px; width:120px; text-align:center; transition: transform 0.3s, box-shadow 0.3s;}
+.skill-card img {width:50px; height:50px; margin-bottom:10px;}
+.skill-card p {font-size:0.95rem;}
+.skill-card:hover {transform:translateY(-5px); box-shadow:0 5px 15px rgba(0,0,0,0.3);}
+
+/* ================= PROJECTS ================= */
+.card {background:#1e293b; padding:20px; margin:10px 0; border-radius:10px; cursor:pointer; transition: transform 0.3s, background 0.3s; text-align:center;}
+.card:hover {transform:scale(1.05); background:#334155;}
+.project-link {display:block; margin-top:8px; color:#38bdf8; text-decoration:underline;}
+#project-details {display:none; background:#020617; padding:20px; margin-top:20px; border-radius:10px; text-align:center;}
+#project-details h3,#project-details p,#project-details a{margin-bottom:10px;}
+
+/* ================= CERTIFICATES ================= */
+.certificates-container {display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:20px;}
+.certificate-card {background:#1e293b; padding:15px; border-radius:10px; text-align:center; width:200px; transition: transform 0.3s;}
+.certificate-card img {width:100%; border-radius:10px; margin-bottom:10px;}
+.certificate-card:hover {transform:scale(1.05);}
+
+/* ================= CONTACT ================= */
+#contact {text-align:center; margin-top:40px; padding:20px;}
+#contact h2 {font-size:2rem; margin-bottom:10px;}
+#contact p {font-size:1.1rem; margin-bottom:20px;}
+.contact-icons {display:flex; justify-content:center; gap:25px;}
+.contact-icon img {width:45px; height:45px; transition:transform 0.3s, filter 0.3s;}
+.contact-icon img:hover {transform:scale(1.2); filter:brightness(1.2);}
+
+/* ================= RESPONSIVE ================= */
+@media screen and (max-width:768px){
+  .hero-container{flex-direction:column; text-align:center; padding:40px 20px; gap:20px;}
+  .hero-photo{width:150px; height:150px;}
+}
